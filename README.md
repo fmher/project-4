@@ -4,15 +4,19 @@ Just a rough idea at the moment but I have an idea of creating some kind of e-co
 
 # ERD
 
-- Im thinking my database can be very simple like a 1 to 1 database
-- Maybe just not having having any DB and just have data implemented in my code somewhere???
+
 
 # Restful routijng Chart
 
 | URL            | CRUD   | HTTP verb | Example            |
 |:-------------- | ------ |:--------- |:-------------------|
 | /homepage      | READ   | GET       | loads data & links |
-| /cars/<int:pk> | READ   | GET       | load car info      |
+| /cars          | READ   | GET       | load all cars      |
+| /cars/<int:pk> | READ   | GET       | load current car info      |
+| /admin    | READ | GET    | load a bunch of info   |
+| /admin/<int:pk> |  POST | CREATE | Create car and its info |
+| /admin/<int:pk> |  PUT | UPDATE | Update car and its info |
+| /admin/<int:pk> |  DELETE | DESTROY | Delete car and its info |
 
 # MVP
 
