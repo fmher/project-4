@@ -9,6 +9,11 @@ Just a rough idea at the moment but I have an idea of creating some kind of e-co
 
 # Restful routijng Chart
 
+| URL            | CRUD   | HTTP verb | Example            |
+|:-------------- | ------ |:--------- |:-------------------|
+| /homepage      | READ   | GET       | loads data & links |
+| /cars/<int:pk> | READ   | GET       | load car info      |
+
 # MVP
 
 - A user has access to multiple cars
@@ -17,6 +22,7 @@ Just a rough idea at the moment but I have an idea of creating some kind of e-co
 
 # Stretch Goals
 
+- show how much to finance/buy car
 - Users can create an account
 - Users can favorite certain cars
 - Users can create/ update their profile
