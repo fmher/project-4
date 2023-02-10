@@ -1,6 +1,6 @@
 # Toslo
 
-Just a rough idea at the moment but I have an idea of creating some kind of e-comerce website. I am also thinking fo creating a website that focuses on selling JDM (Japanese Domestic Cars) cars. This site will be using a React Django and will be using a database. Everyone who goes on the site can see a car. Each car will show its own unique details such as its pricing and how fast it is. 
+Just a rough idea at the moment but I have an idea of creating some kind of e-comerce website. I am thinking of creating a website that focuses on selling JDM (Japanese Domestic Cars) cars. This site will be using a React Django and will be using a database. Everyone who goes on the site can see a car. Each car will show its own unique details such as its pricing and how fast it is. 
 
 # ERD
 
