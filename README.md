@@ -21,8 +21,10 @@ Just a rough idea at the moment but I have an idea of creating some kind of e-co
 
 # MVP
 
-- A user has access to multiple cars
-- See the car details
+- Admin can only edit, update, delete car
+- Anyone can visist the page
+- Any car can be seen
+- Selected car will show its details
 - show homepage
 
 # Stretch Goals
@@ -33,4 +35,4 @@ Just a rough idea at the moment but I have an idea of creating some kind of e-co
 - Users can create/ update their profile
 - add payment onto theit account
 - show order history 
-- create whole new database due to having users
+- create whole new database due to having users creating account
