@@ -12,7 +12,16 @@
     <header>
         <nav>
             <ul>
-                
+                {% for cars in carss %}
+                    <li>
+                        
+                        <a href="{{cars.id}}/info">
+                            {{ cars.name }} 
+        
+                        </a>
+                        
+                    </li>
+                {% endfor %}
             </ul>
         </nav>
     </header>
