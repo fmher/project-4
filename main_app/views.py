@@ -6,7 +6,8 @@ from .models import Cars
 
 # Define the home view
 def home(request):
-    return HttpResponse('<h1> (╯°□°）╯︵ ┻━┻ </h1>')
+    # return HttpResponse('<h1> (╯°□°）╯︵ ┻━┻ </h1>')
+    return render(request, 'welcome_page.html')
 
 def cars(request):
     cars = Cars.objects.all()
