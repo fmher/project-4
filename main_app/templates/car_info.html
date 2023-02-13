@@ -3,11 +3,11 @@
 
 <div>
     <h2>
-        currrent car
+        {% for info in Cars %}
+        currrent car - {{ info.name}}
 
     </h2>
     <ul>
-        {% for info in carss %}
             <li>
                
                 {{ info.name }} ,
