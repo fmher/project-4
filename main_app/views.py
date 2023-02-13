@@ -15,5 +15,6 @@ def cars(request):
     return render(request, 'cars_list.html', {'carss':cars})
 
 def cars_info(request, pk):
-    info = Cars.objects.get(pk=pk)
-    return render(request, 'car_info.html', {info})
+    info = Cars.objects.filter(pk = pk)
+    # info is only one car and its info
+    return render(request, 'car_info.html', {'carss':info})

@@ -1,18 +1,16 @@
 <div>
     <h2>
-        Cars
+        All Cars
 
     </h2>
     <ul>
         {% for cars in carss %}
             <li>
-                {{ cars.id }} ,
-                <a href="{{cars.name}}/info">
+                
+                <a href="{{cars.id}}/info">
                     {{ cars.name }} 
 
                 </a>
-                {{ cars.speed }} ,
-                ${{ cars.pricing }},
                 
             </li>
         {% endfor %}

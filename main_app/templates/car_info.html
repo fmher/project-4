@@ -4,15 +4,15 @@
 
     </h2>
     <ul>
-        
+        {% for info in carss %}
             <li>
-                {{ info.id }} ,
+               
                 {{ info.name }} ,
                 {{ info.speed }} ,
                 ${{ info.pricing }},
                 
             </li>
-        
+        {% endfor %}
     </ul>
     
 </div>
