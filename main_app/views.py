@@ -13,3 +13,7 @@ def cars(request):
     cars = Cars.objects.all()
     # messed up on DB name, so it is carss
     return render(request, 'cars_list.html', {'carss':cars})
+
+def cars_info(request, pk):
+    info = Cars.objects.get(pk=pk)
+    return render(request, 'car_info.html', {info})

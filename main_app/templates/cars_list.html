@@ -1,15 +1,22 @@
 <div>
     <h2>
         Cars
-        <a href="">(+)</a>
+
     </h2>
     <ul>
         {% for cars in carss %}
             <li>
-                {{ cars.name }} ,
+                {{ cars.id }} ,
+                <a href="{{cars.name}}/info">
+                    {{ cars.name }} 
+
+                </a>
                 {{ cars.speed }} ,
-                ${{ cars.pricing }}
+                ${{ cars.pricing }},
+                
             </li>
         {% endfor %}
     </ul>
+    
 </div>
+
