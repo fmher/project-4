@@ -12,10 +12,12 @@
     <header>
         <nav>
             <ul>
+                <li>
+                    <a href="{% url 'home' %}">Home</a>
+                </li>
                 {% for cars in carss %}
                     <li>
-                        
-                        <a href="{{cars.id}}/info">
+                        <a href="{{cars.id}}">
                             {{ cars.name }} 
         
                         </a>
