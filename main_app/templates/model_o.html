@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div>
+    <h2>
+        {% for info in Cars %}
+        currrent car - {{ info.name}}
+
+    </h2>
+    <ul>
+            <li>
+               
+                {{ info.name }} ,
+                {{ info.speed }} ,
+                ${{ info.pricing }},
+                
+            </li>
+        {% endfor %}
+    </ul>
+    
+</div>
+
+{% endblock %}
