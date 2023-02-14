@@ -24,4 +24,4 @@ def cars_info(request, pk):
         return render(request, 'model_l.html', {'Cars':info, 'carss':all_cars} )
     elif (pk == 5):
         return render(request, 'model_o.html', {'Cars':info, 'carss':all_cars} )
-    # return render(request, 'model_o.html', {'Cars':info, 'carss':all_cars})
+    
