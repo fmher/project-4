@@ -16,10 +16,12 @@ def cars_info(request, pk):
     info = Cars.objects.filter(pk = pk)
     all_cars = Cars.objects.all()
     # decided to give car its own page, due to possible diff pic size and quality
-    if (pk <= 1):
+    if (pk == 1):
         return render(request, 'model_2.html', {'Cars':info, 'carss':all_cars})
-    elif (pk <= 2):
+    elif (pk == 2):
         return render(request, 'model_s.html', {'Cars':info, 'carss':all_cars} )
-    elif (pk <= 3):
+    elif (pk == 4):
         return render(request, 'model_l.html', {'Cars':info, 'carss':all_cars} )
-    return render(request, 'model_o.html', {'Cars':info, 'carss':all_cars})
+    elif (pk == 5):
+        return render(request, 'model_o.html', {'Cars':info, 'carss':all_cars} )
+    # return render(request, 'model_o.html', {'Cars':info, 'carss':all_cars})
