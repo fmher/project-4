@@ -23,14 +23,15 @@
 <body>
     <header>
         <nav class="container" >
-            <div class="row align-items-start">
-                <div class="col-1">
-                    <a href="{% url 'home' %}" >2Slo</a>
+            <div class="row justify-content-start g-0">
+                <div class="col-md-4 ">
+                    <a href="{% url 'home' %}"  class="toslow-position">2Slo</a>
 
                 </div>
     
+                
                 {% for cars in carss %}
-                <div class="col-2">
+                <div class="col-1">
                     <a href="{{cars.id}}">
                         {{ cars.name }}
                     </a>
@@ -38,7 +39,6 @@
                 {% endfor %}
 
                 <div class="col-1"></div>
-
             </div>
         </nav>
     </header>

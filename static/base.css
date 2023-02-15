@@ -3,14 +3,20 @@ body {
 }
 
 .word {
-    color:aquamarine
+    color:aquamarine;
+    padding-top: 50vh;
+    text-align: center;
 }
 
 .picture-cover {
-    /* background-image: '/pictures/tesla.webp'; */
-    min-width: 100%;
-    min-height: 100%;
-    /* position: fixed; */
-    margin-top: -1.3%;
+    
+    min-height: 100vh;
+    background-size: cover;
     background-repeat: no-repeat;
+    
 }
+
+.toslow-position  {
+    margin-left: min(-5em, auto);
+}
+

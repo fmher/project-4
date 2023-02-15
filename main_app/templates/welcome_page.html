@@ -2,11 +2,12 @@
 {% load bootstrap5 %}
 {% block content %}
 
+<!-- HAVE TO CLEAR CACHE/HISTORY, IF NOT OLD CSS WILL STILL APPEAR -->
+
 <div 
     class="word picture-cover" 
-    style="background-image: url('/pictures/tesla.webp'); 
-        background-repeat: no-repeat;" 
->
+        style="background-image: url('/pictures/tesla.webp'); " 
+    >
     <h1>
         Welcome to 2Slo !
     </h1>
@@ -16,6 +17,11 @@
     <p>picture of a tesla</p>
     
     <p>prob show its name, maybe</p>
+    <!-- <div class="picture-cover">
+        <picture class="picture-cover">
+            <img src='/pictures/tesla.webp' alt="tesla car" class="picture-cover" />
+        </picture>
+    </div> -->
 
 </div>
 
