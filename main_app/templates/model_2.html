@@ -2,24 +2,25 @@
 {% load bootstrap5 %}
 {% block content %}
 
-<div>
-    <h2>
-        {% for info in Cars %}
-        currrent car - {{ info.name}}
-
-    </h2>
-    <p>{{info.name}}</p>
-
-    <p>true name, honda civic type r</p>
-
-    <img src="/pictures/type-r.jpg" alt="honda civic type r"/>
-    <p>picture will be here</p>
-
-    <div>
-        <p>${{info.pricing}}</p>
-        <p>{{info.speed}} mph</p>
-    </div>
-        
+<div class="word picture-cover" 
+    style="background-image: url('/pictures/type-r.jpg'); "
+>
+{% for info in Cars %}
+    
+    <div class="row align-items-start each-car">
+        <div class="col">
+            {{ info.name}}
+        </div>
+        <div class="col">
+            Starting at ${{info.pricing}}
+        </div>
+        <div class="col">
+            {{info.speed}} mph
+        </div>
+        <div class="col">
+            contact???
+            
+        </div>
     {% endfor %}
 </div>
 

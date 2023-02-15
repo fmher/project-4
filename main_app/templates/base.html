@@ -25,14 +25,16 @@
         <nav class="container" >
             <div class="row justify-content-start g-0">
                 <div class="col-md-4 ">
-                    <a href="{% url 'home' %}"  class="toslow-position">2Slo</a>
+                    <a href="{% url 'home' %}"  class="toslow-position">2Slo
+                        <img src="/pictures/logo.png" alt="slo logo" height="80px" class="logo-over-name"/>
+                    </a>
 
                 </div>
     
                 
                 {% for cars in carss %}
-                <div class="col-1">
-                    <a href="{{cars.id}}">
+                <div class="col-1 home-cars-margin">
+                    <a href="{{cars.id}}" class="home-cars-decoration">
                         {{ cars.name }}
                     </a>
                 </div>

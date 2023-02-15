@@ -1,9 +1,6 @@
-body {
-    background-color: yellow;
-}
 
 .word {
-    color:aquamarine;
+    color:rgb(166, 233, 250);
     padding-top: 50vh;
     text-align: center;
 }
@@ -20,3 +17,24 @@ body {
     margin-left: min(-5em, auto);
 }
 
+.logo-over-name {
+    margin-left: min(-3em)
+}
+
+.home-cars-decoration {
+    text-decoration: none;
+    color: rgb(209, 59, 33);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+
+.home-cars-margin {
+    margin-top: 1.6em;
+}
+
+.each-car {
+    margin-top: -8em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    color: white;
+}
