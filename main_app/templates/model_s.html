@@ -1,25 +1,26 @@
+<!-- ADJUST A BIT -->
 {% extends 'base.html' %}
 {% load bootstrap5 %}
 {% block content %}
 
-<div>
-    <h2>
-        {% for info in Cars %}
-        currrent car - {{ info.name}}
-
-    </h2>
-    <p>{{info.name}}</p>
-
-    <p>true name, gtr 34</p>
-
-    <img src="/pictures/gtr35.jpg" alt="gtr 35"/>
-    <p>picture will be here</p>
-
-    <div>
-        <p>${{info.pricing}}</p>
-        <p>{{info.speed}} mph</p>
-    </div>
-        
+<div class="word model-s" 
+    style="background-image: url('/pictures/new-gtr35.jpg'); "
+>
+{% for info in Cars %}
+    
+    <div class="row align-items-start each-car">
+        <div class="col">
+            {{ info.name}}
+        </div>
+        <div class="col">
+            Starting at ${{info.pricing}}
+        </div>
+        <div class="col">
+            {{info.speed}} mph
+        </div>
+        <!-- <div class="col">
+            contact???
+        </div> -->
     {% endfor %}
 </div>
 

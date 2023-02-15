@@ -1,25 +1,26 @@
+
 {% extends 'base.html' %}
 {% load bootstrap5 %}
 {% block content %}
 
-<div>
-    <h2>
-        {% for info in Cars %}
-        currrent car - {{ info.name}}
-
-    </h2>
-    <p>{{info.name}}</p>
-
-    <p>true name, supra</p>
-
-    <img src="/pictures/supra.webp" alt="toyota supra"/>
-    <p>picture will be here</p>
-
-    <div>
-        <p>${{info.pricing}}</p>
-        <p>{{info.speed}} mph</p>
-    </div>
-        
+<div class="word picture-cover" 
+    style="background-image: url('/pictures/supra.webp'); "
+>
+{% for info in Cars %}
+    
+    <div class="row align-items-start each-car">
+        <div class="col model-l">
+            {{ info.name}}
+        </div>
+        <div class="col model-l">
+            Starting at ${{info.pricing}}
+        </div>
+        <div class="col model-l">
+            {{info.speed}} mph
+        </div>
+        <!-- <div class="col">
+            contact???
+        </div> -->
     {% endfor %}
 </div>
 

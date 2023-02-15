@@ -33,8 +33,21 @@
 }
 
 .each-car {
-    margin-top: -8em;
+    margin-top: -8.5em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 50px;
     color: white;
+    
+}
+
+.model-l {
+    color: rgb(209, 59, 33);
+}
+
+.model-s, .model-o {
+    min-width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    /* width, height */
+    background-size: 100% 100%;
 }
