@@ -5,3 +5,12 @@ body {
 .word {
     color:aquamarine
 }
+
+.picture-cover {
+    /* background-image: '/pictures/tesla.webp'; */
+    min-width: 100%;
+    min-height: 100%;
+    /* position: fixed; */
+    margin-top: -1.3%;
+    background-repeat: no-repeat;
+}
