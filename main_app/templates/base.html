@@ -1,4 +1,10 @@
 {% load static %}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% bootstrap_messages %}
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,26 +14,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
    
     <link rel="stylesheet" type='text/css' href="{% static 'base.css' %}">
+
     <title>JDM Cars 4 Sale! </title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <a href="{% url 'home' %}" >2Slo</a>
+        <nav class="container">
+            <div class="row align-items-start">
+                <div class="col-1">
+                    <a href="{% url 'home' %}" >2Slo</a>
 
-            {% for cars in carss %}
-            
-            <a href="{{cars.id}}">
-                {{ cars.name }}
-            </a>
+                </div>
+    
+                {% for cars in carss %}
+                <div class="col-2">
+                    <a href="{{cars.id}}">
+                        {{ cars.name }}
+                    </a>
+                </div>
+                {% endfor %}
 
+                <div class="col-1"></div>
 
-            {% endfor %}
-
+            </div>
         </nav>
     </header>
 
