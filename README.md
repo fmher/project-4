@@ -14,7 +14,6 @@ I have an idea of creating some kind of e-comerce website. It will be a website 
 |:-------------- | ------ |:--------- |:-------------------|
 | /homepage      | READ   | GET       | loads data & links |
 | /cars          | READ   | GET       | load all cars      |
-| /cars/<int:pk> | READ   | GET       | load current car info      |
 | /contact   | READ  |  GET  | load contact info   |
 | /legalterms  | READ  | GET  | load legal info  |
 
@@ -26,7 +25,7 @@ The user can go on the website and look at all the cars that are provided at on 
 # MVP
 
 - Admin can only edit, update, delete car
-- Anyone can visist the page
+- Anyone can visit the page
 - Any car can be seen
 - Selected car will show its details
 - show homepage
