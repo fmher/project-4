@@ -1,13 +1,6 @@
 {% extends 'base.html' %}
 {% load bootstrap5 %}
 {% block content %}
-<script>
-    $(document).ready(function () {
-        $("#myBtn").click(function () {
-            $("#myToast").toast("show");
-        });
-    });
-</script>
 
 <div class="word picture-cover" style="background-image: url('/pictures/type-r.jpg'); ">
     {% for info in Cars %}
@@ -25,6 +18,12 @@
 
         <div class="col">
 
+            <!-- scrapped due to current app structure -->
+            <!-- <button>
+                <a href="{{info.id}}/overview">Buy Me!</a>
+            </button> -->
+
+            <!-- TOAST WORKS BUT NOT HOW I WANT -->
             <button type="button" class="btn btn-primary" id="toastbtn">Buy Now!</button>
 
             <div class="toast fixed-bottom m-5 ms-auto">
@@ -33,19 +32,23 @@
                     <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
                 </div>
                 <div class="toast-body">
-                    <p>Nice choice!</p>
+                    <p style="color:black">Nice choice!</p>
+                    <p style="color:black">Call (xxx)xxx-xxxx to inquire more information on purchasing this car!</p>
                 </div>
+                
 
             </div>
+
             <script>
                 document.getElementById("toastbtn").onclick = function () {
-                    var toastElList = [].slice.call(document.querySelectorAll('.toast'))
-                    var toastList = toastElList.map(function (toastEl) {
+                    let toastElList = [].slice.call(document.querySelectorAll('.toast'))
+                    let toastList = toastElList.map(function (toastEl) {
                         return new bootstrap.Toast(toastEl)
                     })
                     toastList.forEach(toast => toast.show())
                 }
             </script>
+
         </div>
         {% endfor %}
     </div>

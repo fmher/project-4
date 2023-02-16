@@ -32,3 +32,7 @@ def contact(request):
 def legal_terms(request):
     cars = Cars.objects.all()
     return render(request, 'legal_terms.html', {'carss':cars})
+
+def overview(request, pk):
+    current_car = Cars.objects.filter(pk = pk)
+    return render(request, 'overview.html', { 'Cars':current_car})

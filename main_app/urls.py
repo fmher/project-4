@@ -9,4 +9,5 @@ urlpatterns = [
     path('<int:pk>', views.cars_info, name='cars_info'),
     path('contact', views.contact, name='contact'),
     path('legalterms', views.legal_terms, name='legal_terms'),
+    # path('<int:pk>/overview', views.overview, name='overview'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

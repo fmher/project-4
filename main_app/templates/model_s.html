@@ -18,9 +18,33 @@
         <div class="col">
             {{info.speed}} mph
         </div>
-        <!-- <div class="col">
-            contact???
-        </div> -->
+
+        <div class="col">
+            <button type="button" class="btn btn-primary" id="toastbtn">Buy Now!</button>
+
+            <div class="toast fixed-bottom m-5 ms-auto">
+                <div class="toast-header">
+                    <strong class="me-auto">Customer Service</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+                </div>
+                <div class="toast-body">
+                    <p style="color:black">Fantastic decision!</p>
+                    <p style="color:black">Call (xxx)xxx-xxxx to inquire more information on purchasing this car!</p>
+                </div>
+                
+
+            </div>
+
+            <script>
+                document.getElementById("toastbtn").onclick = function () {
+                    let toastElList = [].slice.call(document.querySelectorAll('.toast'))
+                    let toastList = toastElList.map(function (toastEl) {
+                        return new bootstrap.Toast(toastEl)
+                    })
+                    toastList.forEach(toast => toast.show())
+                }
+            </script>
+        </div>
     {% endfor %}
 </div>
 
