@@ -109,3 +109,8 @@ a:hover::after {
     padding-bottom: 1%;
 }
 
+.btn-position {
+    padding-top: 0.8%;
+    /* margin-right: 2%; */
+    margin-left: -10%;
+}

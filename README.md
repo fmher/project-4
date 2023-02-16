@@ -19,7 +19,7 @@ I have an idea of creating some kind of e-comerce website. It will be a website 
 
 # User Experience 
 
-The user can go on the website and look at all the cars that are provided at on the website. The user will see different cars, their pricing, and how fast each car is. If the customer is interested in buying one of the provided cars they will click the buy now button. That button will have a pop up explaining telling the customer to call the follwing number to buy the car. 
+The user can go on the website and look at all the cars that are provided at on the website. The user will see different cars, their pricing, and how fast each car is. If the customer is interested in buying one of the provided cars they will click the buy now button. That button will have a pop up explaining telling the customer to call the following number to buy the car. 
 
 
 # MVP
@@ -29,7 +29,7 @@ The user can go on the website and look at all the cars that are provided at on 
 - Any car can be seen
 - Selected car will show its details
 - show homepage
-- Buy Button
+- Buy Button that pops up a phone number
 
 # Stretch Goals
 
@@ -47,4 +47,4 @@ The user can go on the website and look at all the cars that are provided at on 
 - get toast to work properly
 
 # Post Reflection
-I think overall I did a good job on this project. I think that my understanding  of Django is decent and can get better. I feel like there are better ways to apporach certain things that I did within this project, but I could not. So, I used my creativity and my current knowledge to make a functioning website. I had a lot of trouble getting Django to work. I had to search up a lot on how to get certain things to work such as getting css to function, render photos properly, and to mess with the settings file first. I learned that adding things to the settings file allows you to implement new things to your app. There are still a lot of things that I dont know about Django but would love to learn. I think this project was a great learning experience in learning Django. 
+I think overall I did a good job on this project. I think that my understanding  of Django is decent and can get better. I feel like there are better ways to apporach certain things that I did within this project, but I could not. So, I used my creativity and my current knowledge to make a functioning website. I had a lot of trouble getting Django to work. I had to search up a lot on how to get certain things to work such as getting css to function, render photos properly, and to mess with the settings file first. I learned that adding things to the settings file allows you to implement new things to your app. There are still a lot of things that I dont know about Django but would love to learn. This project helped give me a better understanding of how Django operates. 
