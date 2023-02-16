@@ -1,8 +1,41 @@
+body, html {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+}
+
+a::after {
+    transition: .5s;
+    transition: scaleX(0);
+    transform-origin: right;
+    top: 100%;
+}
+
+a:hover {
+    color: rgb(209, 59, 33);
+    text-decoration: 5px underline;
+    /* text-decoration-color: rgb(0, 0, 0);; */
+}
+
+a:hover::after {
+    transform-origin: left;
+    transition: scaleX(1);
+}
+
 
 .word {
     color:rgb(166, 233, 250);
     padding-top: 50vh;
     text-align: center;
+}
+
+.sentences {
+    text-align: center;
+    height: 85vh;
 }
 
 .picture-cover {
@@ -32,6 +65,21 @@
     margin-top: 1.6em;
 }
 
+.menubar {
+    margin-top: -3.9em;
+    margin-left: 90%;
+    /* color: rgb(209, 59, 33); */
+    
+}
+/* ul.dropdown-menu {
+    background-color: #000;
+} */
+
+.menubutton {
+    background-color: white;
+    border-color: white;
+}
+
 .each-car {
     margin-top: -8.5em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -51,3 +99,13 @@
     /* width, height */
     background-size: 100% 100%;
 }
+
+.footer {
+    margin: min(1%);
+    text-align: center;
+    margin-left: 30%;
+    padding-bottom: 1%;
+}
+
+
+

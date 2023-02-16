@@ -40,7 +40,17 @@
                 </div>
                 {% endfor %}
 
-                <div class="col-1"></div>
+                <div class="dropdown menubar">
+                    <button class="btn btn-secondary dropdown-toggle home-cars-decoration menubutton" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                        Menu
+                    </button>
+                    <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton2">
+                        <li><a class="dropdown-item home-cars-decoration" href="{% url 'contact' %}">Contact</a></li>
+                        <li><a class="dropdown-item home-cars-decoration" href="{% url 'legal_terms' %}">Legal Terms</a></li>
+                        
+                </div>
+
+
             </div>
         </nav>
     </header>
@@ -50,6 +60,23 @@
         {% endblock %}
     </main>
 
+    <footer class="footer ">
+
+        <div class="container">
+            <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+              <div class="col ">
+                2Slo © 2023
+              </div>
+              <div class="col ">
+                <a href="{% url 'contact' %}" >contact</a>
+              </div>
+              <div class="col">
+                <a href="{% url 'legal_terms' %}" >Legal Terms</a>
+              </div>
+            </div>
+        </div>
+
+    </footer>
 </body>
 
 </html>

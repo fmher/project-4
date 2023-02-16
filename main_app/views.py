@@ -24,4 +24,11 @@ def cars_info(request, pk):
         return render(request, 'model_l.html', {'Cars':info, 'carss':all_cars} )
     elif (pk == 5):
         return render(request, 'model_o.html', {'Cars':info, 'carss':all_cars} )
-    
+
+def contact(request):
+    cars = Cars.objects.all()
+    return render(request, 'contact.html', {'carss':cars})
+
+def legal_terms(request):
+    cars = Cars.objects.all()
+    return render(request, 'legal_terms.html', {'carss':cars})
