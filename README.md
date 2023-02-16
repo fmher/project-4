@@ -1,6 +1,7 @@
-# Toslo
+# 2slo
 
-Just a rough idea at the moment but I have an idea of creating some kind of e-comerce website. I am thinking of creating a website that focuses on selling JDM (Japanese Domestic Cars) cars. This site will be using a React Django and will be using a database. Everyone who goes on the site can see a car. Each car will show its own unique details such as its pricing and how fast it is. 
+I have an idea of creating some kind of e-comerce website. It will be a website that focuses on selling JDM (Japanese Domestic Cars) cars. This site will be using React Django and will be using a database. Everyone who goes on the site can see a car. Each car will show its own unique details such as its pricing and how fast it is. 
+
 
 # ERD
 
@@ -14,6 +15,12 @@ Just a rough idea at the moment but I have an idea of creating some kind of e-co
 | /homepage      | READ   | GET       | loads data & links |
 | /cars          | READ   | GET       | load all cars      |
 | /cars/<int:pk> | READ   | GET       | load current car info      |
+| /contact   | READ  |  GET  | load contact info   |
+| /legalterms  | READ  | GET  | load legal info  |
+
+# User Experience 
+
+The user can go on the website and look at all the cars that are provided at on the website. The user will see different cars, their pricing, and how fast each car is. If the customer is interested in buying one of the provided cars they will click the buy now button. That button will have a pop up explaining telling the customer to call the follwing number to buy the car. 
 
 
 # MVP
@@ -23,9 +30,13 @@ Just a rough idea at the moment but I have an idea of creating some kind of e-co
 - Any car can be seen
 - Selected car will show its details
 - show homepage
+- Buy Button
 
 # Stretch Goals
 
+- create drop down menu bar
+- create footer
+- have logo that brings you to home when clicked
 - show how much to finance/buy car
 - Users can create an account
 - Users can favorite certain cars
@@ -33,3 +44,6 @@ Just a rough idea at the moment but I have an idea of creating some kind of e-co
 - add payment onto theit account
 - show order history 
 - create whole new database due to having users creating account
+
+# Post Reflection
+I think overall I did a good job on this project. I think that my understanding  of Django is decent and can get better. I feel like there are better ways to apporach certain things that I did within this project, but I did not. So, I used my creativity and my current knowledge to make a functioning website. I had a lot of trouble when attempting Django. I had to search up a lot on how to get certain things to work such as getting css to work, render photos correctly, and to mess with the settings file first to get everything else to work. There are still a lot of things that I dont know about Django but would love to learn. I think this project was a great learning experience in learning Django. 
