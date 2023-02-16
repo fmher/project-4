@@ -70,12 +70,9 @@ a:hover::after {
 .menubar {
     margin-top: -3.9em;
     margin-left: 90%;
-    /* color: rgb(209, 59, 33); */
     
 }
-/* ul.dropdown-menu {
-    background-color: #000;
-} */
+
 
 .menubutton {
     background-color: white;

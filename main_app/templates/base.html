@@ -4,7 +4,7 @@
 {% bootstrap_javascript %}
 {% bootstrap_messages %}
 
-
+<!-- HAVE TO CLEAR CACHE/HISTORY, IF NOT OLD CSS WILL STILL APPEAR -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,7 +17,7 @@
    
     <link rel="stylesheet" type='text/css' href="{% static 'base.css' %}">
 
-    <title>JDM Cars 4 Sale! </title>
+    <title>Welcome to 2Slo! Your dream car awaits!</title>
 </head>
 
 <body>
@@ -25,13 +25,14 @@
         <nav class="container" >
             <div class="row justify-content-start g-0">
                 <div class="col-md-4 ">
+                    <!-- homepage  -->
                     <a href="{% url 'home' %}"  class="toslow-position">2Slo
                         <img src="/pictures/logo.png" alt="slo logo" height="80px" class="logo-over-name"/>
                     </a>
 
                 </div>
     
-                
+                <!-- shows all models, names, allows you access their route by click -->
                 {% for cars in carss %}
                 <div class="col-1 home-cars-margin">
                     <a href="{{cars.id}}" class="home-cars-decoration">
@@ -40,6 +41,7 @@
                 </div>
                 {% endfor %}
 
+                <!-- menu bar, shows contacts & legal stuff -->
                 <div class="dropdown menubar">
                     <button class="btn btn-secondary dropdown-toggle home-cars-decoration menubutton" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                         Menu
