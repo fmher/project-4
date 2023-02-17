@@ -1,6 +1,6 @@
 # 2slo
 
-I have an idea of creating some kind of e-comerce website. It will be a website that focuses on selling JDM (Japanese Domestic Cars) cars. This site will be using React Django and will be using a database. Everyone who goes on the site can see a car. Each car will show its own unique details such as its pricing and how fast it is. 
+I have an idea of creating some kind of e-comerce website. It will be a website that focuses on selling JDM (Japanese Domestic Cars) cars. This site will be using React Django and will be using a database. A full stack python app using postgres with django framework. Everyone who goes on the site can see a car. Each car will show its own unique details such as its pricing and how fast it is. 
 
 
 # ERD
