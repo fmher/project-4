@@ -30,6 +30,7 @@ The user can go on the website and look at all the cars that are provided at on 
 - Selected car will show its details
 - show homepage
 - Buy Button that pops up a phone number
+- Now we can see if our project starts up! Run python3 manage.py runserver
 
 # Stretch Goals
 
